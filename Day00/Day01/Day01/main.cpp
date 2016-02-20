@@ -4,21 +4,23 @@ using namespace std;
 int main ()
 {
 
-	int n_int = INT_MAX;
-	short shrt = SHRT_MAX;
-	long loong = LONG_MAX;
-	long long llong = LLONG_MAX;
+	long long world_population;
+	long long rus_population;
+	long float procent;
 
-	cout<<"int is "<<sizeof(int)<<" bytes.\n";
-	cout<<"short is "<<sizeof(short)<<" bytes.\n";
-	cout<<"long is "<<sizeof(long)<<" bytes.\n";
-	cout<<"long long is "<<sizeof(long long)<<" bytes\n\n\n";
+	cout<<"Enter the world population: ";
+	cin>>world_population;
 
-	cout<<"Maximum values:\n";
-	cout<<"int: "<<n_int<<endl;
-	cout<<"short: "<<shrt<<endl;
-	cout<<"long: "<<loong<<endl;
-	cout<<"long long: "<<llong<<endl;
+	cout<<endl;
+
+	cout<<"Enter the population of Russia: ";
+	cin>>rus_population;
+
+	cout<<endl;
+
+	procent=rus_population/(world_population/100);
+
+	cout<<"The population of Russia is "<<procent<<" % of world population\n\n";
 
 	return 0;
 }
