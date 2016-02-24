@@ -5,11 +5,16 @@ using namespace std;
 
 int main ()
 {
-	char name[15];
-	cin>>name;
+	cout<<"-Hello, what's your name?\n\n-";
 
-	cout<<"Okey, "<<name;
-	cout<<"yur name has "<<strlen(name)<<" letters\n\n";
+	char name[15];
+	cin.getline(name, 20);
+
+	cout<<endl;
+
+	cout<<"-Okey, "<<name<<" how did you spend tour weekends?\n\n-";
+
+	cout<<"I had a good time in museum";
 
 	return 0;
 }
