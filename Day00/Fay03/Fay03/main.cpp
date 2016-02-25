@@ -1,20 +1,43 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 
 using namespace std;
 
-int main ()
+int main () 
 {
-	cout<<"-Hello, what's your name?\n\n-";
 
-	char name[15];
-	cin.getline(name, 20);
+	string firstName;
+	char lastName[20];
+	int age;
+	char grade;
+
+	cout<<"Enter your first name: ";
+	getline (cin, firstName);
 
 	cout<<endl;
 
-	cout<<"-Okey, "<<name<<" how did you spend tour weekends?\n\n-";
+	cout<<"Enter your last name: ";
+	cin.getline(lastName, 20);
 
-	cout<<"I had a good time in museum";
+	cout<<endl;
+
+	cout<<"What letter grade do you deserve? ";
+	cin>>grade;
+
+	cout<<endl;
+
+	cout<<"What is your age? ";
+	cin>>age;
+
+	cout<<endl;
+
+	cout<<"Name: "<<lastName<<", "<<firstName;
+
+	cout<<endl;
+
+	char grade2=grade+1;
+
+	cout<<"Grade: "<<grade2<<"\n\n";
 
 	return 0;
 }
