@@ -1,25 +1,26 @@
 #include <iostream>
 #include <cstring>
+#include <string>
 
 using namespace std;
 
 int main ()
 {
 
-	char firstName[20];
-	char lastName[30];
+	string firstName;
+	string lastName;
 
 	cout<<"Enter your first name: ";
-	cin>>firstName;
+	getline (cin, firstName);
 
 	cout<<endl;
 
 	cout<<"Enter your last name: ";
-	cin>>lastName;
+	getline (cin, lastName);
 
 	cout<<endl;
 
-	cout<<"Here's information in a single string: "<<lastName<<", "<<firstName;
+	cout<<"Here's information in a single string: "<<lastName<<", "<<firstName<<"\n\n";
 
 	return 0;
 }
