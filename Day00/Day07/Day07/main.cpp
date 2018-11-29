@@ -20,7 +20,7 @@ int main ()
 
 	cout<<endl;
 
-	cout<<"Here's information in a single string: "<<lastName<<", "<<firstName<<"\n\n";
+	cout<<"Prodolzhay coditb gandon: "<<lastName<<", "<<firstName<<"\n\n";
 
 	return 0;
 }
